@@ -42,8 +42,8 @@ test('Complete purchase flow on SauceDemo', async ({ page }) => {
   await page.getByRole('button', { name: 'Checkout' }).click(); // Action: Start checkout
 
   // Fill checkout information
-  await page.locator('#first-name').fill('Shelley'); // Action: Fill first name
-  await page.getByPlaceholder('Last Name').fill('Adrien'); // Action: Fill last name
+  await page.locator('#first-name').fill('misbah'); // Action: Fill first name
+  await page.getByPlaceholder('Last Name').fill('waseem'); // Action: Fill last name
   await page.getByPlaceholder('Zip/Postal Code').fill('50420'); // Action: Fill postal code
 
   // Continue to overview
